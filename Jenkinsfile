@@ -1,9 +1,9 @@
 pipeline {
     agent any
     environment {
-        AWS_CREDENTIALS_ID = 'mn_aws' // ID for your AWS credentials in Jenkins
+        AWS_CREDENTIALS_ID = 'mnaws' // ID for your AWS credentials in Jenkins
         ECR_REPO_NAME = 'mansinair/mtnimage' // Name of your ECR repository
-        AWS_REGION = 'ap-southeast-2' // Region where your ECR repository is located
+        AWS_REGION = 'us-east-1' // Region where your ECR repository is located
         DOCKER_TAG = 'latest'
         ECR_URI = "010928201659.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO_NAME}"
     }
