@@ -5,7 +5,7 @@ pipeline {
         ECR_REPO_NAME = 'mansinair/mtnimage' // Name of your ECR repository
         AWS_REGION = 'us-east-1' // Region where your ECR repository is located
         DOCKER_TAG = 'latest'
-        ECR_URI = "010928201659.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO_NAME}"
+        ECR_URI = "846654926420.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO_NAME}"
     }
     stages {
         stage('Build Docker Image') {
